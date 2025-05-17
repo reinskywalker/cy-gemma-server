@@ -46,8 +46,17 @@ export default function Home() {
       </Navbar>
 
       <MainContent>
-        <ResponsiveImage src="/img/logo.svg" alt="Logo" width={150} height={150} />
+        {/* <ResponsiveImage src="/img/logo.svg" alt="Logo" width={150} height={150} /> */}
         <AnimatedGradientText>Cy Gemma Server</AnimatedGradientText>
+
+        <IntroBlock>
+          <h1>Andre Reynaldi Lusikooy</h1>
+          <p>Fullstack Engineer | SDET | Automation & AI Enthusiast</p>
+          <CenteredImageWrapper>
+            <ProfileImage src="/img/persona.svg" alt="Reinskywalker Avatar" width={180} height={180} />
+          </CenteredImageWrapper>
+        </IntroBlock>
+
         <ButtonRow>
           <ButtonLink href="#" target="_blank">
             <Button>Get the app <AndroidIcon /></Button>
@@ -119,8 +128,8 @@ const MainContent = styled.main`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 80px);
   text-align: center;
+  padding: 40px 20px;
 `;
 
 const AnimatedGradientText = styled.div`
@@ -144,6 +153,30 @@ const AnimatedGradientText = styled.div`
     50% { background-position: 100% 50%; }
     100% { background-position: 0px 50%; }
   }
+`;
+
+const IntroBlock = styled.div`
+  margin-top: 30px;
+
+  h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+    color: gray;
+  }
+`;
+
+const CenteredImageWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+`;
+
+const ProfileImage = styled(Image)`
+  border-radius: 50%;
 `;
 
 const ButtonRow = styled.div`
