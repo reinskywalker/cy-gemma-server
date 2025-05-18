@@ -1,16 +1,14 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
-import React from 'react'
 
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Cy Gemma Server',
-  description: 'Generate, chat, build, and explore ideas with AI.',
+  title: 'Cy-Gemma Server',
+  description: 'Discover new vision with AI',
 }
-
 
 export default function RootLayout({
   children,
